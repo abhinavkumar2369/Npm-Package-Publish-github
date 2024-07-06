@@ -19,22 +19,31 @@
 - **`repository:`** Specify the URL of your GitHub repository.
 - **`publishConfig:`** Add a section for GitHub Packages URL.
   Example package.json adjustments:
-  ```js
+  
+  ```
   {
-  "name": "@your-github-username/your-package-name",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/your-github-username/your-package-name.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "author": "",
-  "license": "ISC"
-  }
+    "name": "@your-github-username/your-package-name",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/your-github-username/your-package-name.git"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com/"
+    },
+    "author": "Your Name",
+    "author": "",
+    "license": "ISC"
+    }
+    "bugs": {
+      "url": "https://github.com/your-github-username/your-package-name/issues"
+    },
+    "homepage": "https://github.com/your-github-username/your-package-name#readme"
   ```
 
 
