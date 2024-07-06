@@ -4,11 +4,16 @@
 - This guide assumes you already have a GitHub account and have Git installed on your machine.
 
 
+<br>
+
+
 ## 1: Prepare Your Project 📝
 
 1. **`Initialize your project`** (if you haven't already) by running npm init in your project directory.
 2. **`Create your library`**: Implement the functionality you wish to provide. For example, a simple function in index.js.
 
+
+<br>
 
 
 ## 2: Configure Your Package for GitHub Packages ⚒️
@@ -47,9 +52,10 @@
   ```
 
 
+<br>
 
 
-## 3: Authenticate with GitHub Packages
+## 3: Authenticate with GitHub Packages ✅
 
 1. - Generate a personal access token (PAT) on GitHub with `write:packages`, `read:packages`, and `delete:packages` (if necessary) scopes.
    - Include `repo` scope if your repository is private.
@@ -62,19 +68,19 @@
   - Email: your GitHub email
 
 
+<br>
 
 
-
-## 4: Publish Your Package
+## 4: Publish Your Package 📌
   - Run the following command in your project directory:
     ```bash
     npm publish
     ```
 
+<br>
 
 
-
-## 5: Using Your GitHub Package
+## 5: Using Your GitHub Package 😀
   - To use your package in a project, you need to configure the project to use GitHub Packages.
 
   1. Create or edit an `.npmrc` file in your project root (or your home directory for global configuration) to include:
